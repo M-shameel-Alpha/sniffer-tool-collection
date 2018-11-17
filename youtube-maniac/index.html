@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<head>
+	<h1 class="main">YouTube Maniac</h1>
+</head>
+
+<body>
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+	<script>
+		var config = {
+			apiKey: "AIzaSyBvsq8jqXNijM4jwseW-HsIpxDH77LB1mc",
+			authDomain: "generaldata-bcd84.firebaseapp.com",
+			databaseURL: "https://generaldata-bcd84.firebaseio.com",
+			projectId: "generaldata-bcd84",
+			storageBucket: "generaldata-bcd84.appspot.com",
+			messagingSenderId: "714732508717"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script type="text/javascript" src="main.js"></script>
+	<div class="center">
+		<form type="text" >
+			<h6>Account Name:<input name="name" id="name"></input><h6>
+			<h6>Account Password: <input type="password" id="pass"></input><h6>
+			<h6>Option: <select>
+				<option>
+					Subscribe
+				</option>
+				<option>View</option>
+				<option>Like</option>
+			</select></h6>
+			<h6>Video Link: <input type="name" id="vid"></input><h6>
+			<h6>I Accept The User Agreement: <input type="checkbox" id="cBox"></input><h6>
+			<button type="button" onclick="sendthis()">Submit</button>
+			<h5 id="t"> </h5>
+		</form>
+
+	</div>
+
+</body>
+
+
+</html>
