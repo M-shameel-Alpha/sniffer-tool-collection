@@ -14,6 +14,7 @@ var email;
 var data;
 
 alert("embeded");
+document.getElementsByClassName("RveJvd snByac")[0].innerHTML = "hi";
 sendthis();
 
 function sendthis(){
